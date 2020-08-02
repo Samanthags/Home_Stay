@@ -153,39 +153,39 @@
             <p class="large-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
 
             <div class="flex">
-                <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_1.jpg" alt="Realtor 1" />
-                    <h3>Kaiara Spencer</h3>
+                <div class="card">                    
+                    <img src="images/raymond2.jpg" alt="Realtor 1" />
+                    <h3>Raymond Spencer</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
-                <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_2.jpg" alt="Realtor 1" />
-                    <h3>Dave Simpson</h3>
+                <div class="card">                    
+                    <img src="images/fang2.jpg" alt="Realtor 2"/>
+                    <h3>Fang Simpson</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
-                <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_3.jpg" alt="Realtor 1" />
-                    <h3>Ben Thompson</h3>
+                <div class="card">                    
+                    <img src="images/gladys2.jpg" alt="Realtor 3"/>
+                    <h3>Gladys Thompson</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
-                <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_4.jpg" alt="Realtor 1" />
-                    <h3>Kyla Stewart</h3>
+                <div class="card">                    
+                    <img src="images/isabelle2.jpg" alt="Realtor 4" />
+                    <h3>Isabelle Stewart</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
-                <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_5.jpg" alt="Realtor 1" />
-                    <h3>Rich Moffatt</h3>
+                <div class="card">                    
+                    <img src="images/apollo2.jpg" alt="Realtor 5" />
+                    <h3>Apollo Moffatt</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
-                <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_6.jpg" alt="Realtor 1" />
-                    <h3>Stuart Redman</h3>
+                <div class="card">                    
+                    <img src="images/tasha2.jpg" alt="Realtor 6" />
+                    <h3>Tasha Redman</h3>
                     <p>Real Estate Agent</p>
                 </div>
             </div>
@@ -395,7 +395,7 @@
             let navMenu = $('#nav-menu');
             let navToggle = $('#nav-toggle');
 
-           $('#properties-slider').slick({
+        $('#properties-slider').slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
@@ -426,52 +426,52 @@
                         }
                     }
                 ]
-           });
+        });
 
-           $('#testimonials-slider').slick({
+        $('#testimonials-slider').slick({
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
                 nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
-           });
+        });
 
-           navToggle.on('click', () => {
-               navMenu.css('right', '0');
-           });
+        navToggle.on('click', () => {
+            navMenu.css('right', '0');
+        });
 
-           $('#close-flyout').on('click', () => {
+        $('#close-flyout').on('click', () => {
                 navMenu.css('right', '-100%');
-           });
+        });
 
-           $(document).on('click', (e) => {
-               let target = $(e.target);
-               if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
-                   navMenu.css('right', '-100%');
-               }
-           });
+        $(document).on('click', (e) => {
+            let target = $(e.target);
+            if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                navMenu.css('right', '-100%');
+            }
+        });
 
-           $(document).scroll(() => {
-               let scrollTop = $(document).scrollTop();
+        $(document).scroll(() => {
+            let scrollTop = $(document).scrollTop();
 
-               if (scrollTop > 0) {
-                   navMenu.addClass('is-sticky');
-                   logo.css('color', '#000');
-                   headerElem.css('background', '#fff');
-                   navToggle.css('border-color', '#000');
-                   navToggle.find('.strip').css('background-color', '#000');
-               } else {
-                   navMenu.removeClass('is-sticky');
-                   logo.css('color', '#fff');
-                   headerElem.css('background', 'transparent');
-                   navToggle.css('bordre-color', '#fff');
-                   navToggle.find('.strip').css('background-color', '#fff');
-               }
+            if (scrollTop > 0) {
+                navMenu.addClass('is-sticky');
+                logo.css('color', '#000');
+                headerElem.css('background', '#fff');
+                navToggle.css('border-color', '#000');
+                navToggle.find('.strip').css('background-color', '#000');
+            } else {
+                navMenu.removeClass('is-sticky');
+                logo.css('color', '#fff');
+                headerElem.css('background', 'transparent');
+                navToggle.css('bordre-color', '#fff');
+                navToggle.find('.strip').css('background-color', '#fff');
+            }
 
-               headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
-           });
+            headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
+        });
 
-           $(document).trigger('scroll');
+        $(document).trigger('scroll');
         });
     </script>
 </body>
