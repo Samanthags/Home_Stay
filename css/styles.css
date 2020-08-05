@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
 
-/* start: global styles */
+
 body {
     font-family: "Roboto", "Helvetica", "Sans-serif";
     margin: 0;
@@ -87,9 +87,9 @@ p.large-paragraph {
     font-size: 1.25rem;
     font-weight: 300;
 }
-/* end: global styles */
 
-/* start: header styles */
+
+/* Start Header  */
 #header-hero-container {
     min-height: 600px;
     height: calc(100vh);
@@ -114,6 +114,7 @@ header {
     position: relative;
     top: 4px;
 }
+
 
 .hamburger-menu {
     background-color: transparent;
@@ -164,9 +165,9 @@ header ul.is-sticky li a:hover,
 header ul.is-sticky li a.active {
     color: #f69314;
 }
-/* end: header styles */
+/* End Header */
 
-/* start: hero section styles */
+/* Start Hero */
 #hero {
     background: url('https://onclickwebdesign.com/wp-content/uploads/hero_1.jpg') center center no-repeat;
     background-size: cover;
@@ -205,9 +206,9 @@ header ul.is-sticky li a.active {
     font-weight: 300;
     font-size: 1rem;
 }
-/* end: hero section styles */
+/* End Hero*/
 
-/* start: how it works styles */
+/* Start how it workss */
 #how-it-works {
     padding: 3rem 0;
     background: #f8f9fa;
