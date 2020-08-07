@@ -9,10 +9,12 @@ body {
     font-weight: 400;
     color: #777;
     line-height: 1.7;
+    background-color: #370613 ;
 }
 
 * {
     outline: none;
+    
 }
 
 *:not(.slick-track):not(.slick-list) {
@@ -23,6 +25,7 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 .flex {
